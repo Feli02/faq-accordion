@@ -1,0 +1,203 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+.attribution p{
+    color: #3a015c;
+}
+
+footer{
+    height: 10%;
+    text-align: center;
+    line-height: 25px;
+}
+
+.attribution a{
+    text-decoration: underline wavy #00b4d8;
+    color: #00b4d8;
+    transition: all 0.3s
+}
+
+.attribution a:hover{
+    transition: all, 0.3s ;
+    color: #f72585;
+    text-decoration: underline wavy #f72585;
+}
+
+
+::marker{ display:none; } 
+summary{ list-style: none }
+
+.imgages-desktop{
+    display: none;
+}
+
+.pattern-mobile{
+    position: absolute;
+    left: 67px;
+    top: 125px;
+}
+
+.img-mobile{
+    position: absolute;
+    top: -110px;
+    left: 16px
+}
+
+#card{
+    background: white;
+    padding: 15px;
+    margin: 140px 20px 35px 20px;
+    border-radius: 25px;
+    height: fit-content;
+    width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('./images/bg-pattern-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: relative;
+}
+
+#faq-title{
+    margin-top: 110px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+#info-all{
+    font-size: 12px;
+}
+
+#info h2{
+    margin-top: 25px;
+    padding-bottom: 25px;
+    font-weight: 400;
+    width: 100%;
+    cursor: pointer;
+    font-size: 20px;
+    color: hsl(237, 12%, 33%);
+}
+
+article{
+    align-items: center;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+.question{
+    display: flex;
+    width: 100%;
+}
+
+#arrow-img{
+    height: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+#answer{
+    margin-bottom: 25px;
+}
+
+#answer p{
+    line-height: 25px;
+    font-size: 17px;
+    color: hsl(240, 6%, 50%);
+}
+
+details[open] summary .question #title-question{
+    font-weight: 700;
+    color: hsl(238, 29%, 16%);
+    transition: color 0.3s, font-weight 0.3s;
+}
+
+details[open] summary .question #arrow-img{
+    transform: rotate(180deg);
+    transition: transform 0.5s;
+}
+
+details[open] summary ~ * {
+    animation: sweep 0.5s ease-in-out both;
+}
+@keyframes sweep {
+    0%    {opacity: 0; margin-top: -10px}
+    100%  {opacity: 1; margin-top: 0px}
+}
+
+
+@media (min-width: 700px){
+    html{
+        height: 100%;
+    }
+}
+
+
+
+
+@media (min-width: 1000px){
+    #info #title-question:hover{
+        color: hsl(14, 88%, 65%);
+        transition: color 0.4s;
+    }
+    .imgages-desktop{
+        display: block;
+    }
+    #right-card{
+        width: 50%;
+        padding: 15px;
+    }
+    #imgages-mobile{
+        display: none;
+    }
+    #card{
+        display: flex;
+        width: 75%;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        padding: 0;
+        height: 520px;
+        margin-bottom: 20px;
+        background-image: none
+    }
+    #left-card{
+        width: 50%;
+        background-image: 
+            url('./images/illustration-woman-online-desktop.svg'),
+            url('./images/bg-pattern-desktop.svg');
+
+        background-repeat: no-repeat, no-repeat;
+        background-position: left -80px center, left -530px top -270px;
+        position: relative;
+    }
+    .box-desktop-img {
+        position: absolute;
+        top: 215px;
+        left: -93px;
+    }
+    #faq-title {
+        margin-top: 70px;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+    #info h2{
+        font-size: 18px;
+        margin-top: 20px;
+        padding-bottom: 15px;
+    }
+    #answer p {
+        line-height: 20px;
+        font-size: 14px;
+    }
+    #arrow-img {
+        margin-top: 25px;
+    }
+}
