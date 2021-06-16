@@ -9,6 +9,10 @@ body{
     background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
 }
 
+#faq-title{
+    font-size: 35px;
+}
+
 .attribution p{
     color: #3a015c;
 }
