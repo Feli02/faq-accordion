@@ -79,7 +79,7 @@ summary::-webkit-details-marker {
     font-size: 12px;
 }
 
-#info h2{
+.info h2{
     margin-top: 25px;
     padding-bottom: 25px;
     font-weight: 400;
@@ -99,29 +99,29 @@ article{
     width: 100%;
 }
 
-#arrow-img{
+.arrow-img{
     height: 10px;
     margin-top: 30px;
     cursor: pointer;
 }
 
-#answer{
+.answer{
     margin-bottom: 25px;
 }
 
-#answer p{
+.answer p{
     line-height: 25px;
     font-size: 17px;
     color: hsl(240, 6%, 50%);
 }
 
-details[open] summary .question #title-question{
+details[open] summary .question .title-question{
     font-weight: 700;
     color: hsl(238, 29%, 16%);
     transition: color 0.3s, font-weight 0.3s;
 }
 
-details[open] summary .question #arrow-img{
+details[open] summary .question .arrow-img{
     transform: rotate(180deg);
     transition: transform 0.5s;
 }
@@ -145,7 +145,7 @@ details[open] summary ~ * {
 
 
 @media (min-width: 1000px){
-    #info #title-question:hover{
+    .info .title-question:hover{
         color: hsl(14, 88%, 65%);
         transition: color 0.4s;
     }
@@ -191,16 +191,16 @@ details[open] summary ~ * {
         text-align: left;
         margin-bottom: 30px;
     }
-    #info h2{
+    .info h2{
         font-size: 18px;
         margin-top: 20px;
         padding-bottom: 15px;
     }
-    #answer p {
+    .answer p {
         line-height: 20px;
         font-size: 14px;
     }
-    #arrow-img {
+    .arrow-img {
         margin-top: 25px;
     }
 }
