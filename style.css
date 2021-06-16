@@ -119,13 +119,13 @@ article{
     color: hsl(240, 6%, 50%);
 }
 
-details[open] summary .question .title-question{
+details[open] summary.question .title-question{
     font-weight: 700;
     color: hsl(238, 29%, 16%);
     transition: color 0.3s, font-weight 0.3s;
 }
 
-details[open] summary .question .arrow-img{
+details[open] summary.question .arrow-img{
     transform: rotate(180deg);
     transition: transform 0.5s;
 }
